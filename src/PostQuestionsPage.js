@@ -931,12 +931,12 @@ const PostQuestionsPage = () => {
         // navigate('/meditation', { state: { videoUrl: 'https://www.dropbox.com/s/mvu95wbgrjsln94/1.mp4?raw=1', description: "nature sound", benefits:"relax" } });
       }
   
-      const data = await response.json();
-      const { videoUrl } = data;
+      // const data = await response.json();
+      // const { videoUrl } = data;
   
       navigate(nextPage, {
         state: {
-          videoUrl,
+          videoUrl: videoUrl,
           description: "nature sound", benefits:"relax"
         }
       });

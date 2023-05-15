@@ -48,7 +48,8 @@ function FinalPage() {
         </div>
       </header>
       {/* <div className="background-image"></div> */}
-      <img src="mindfulness_welcome.jpg" alt="Welcome" className="final-background-image" />
+      <div className="final-background-image"></div>
+      {/* <img src="mindfulness_welcome.jpg" alt="Welcome" className="final-background-image" /> */}
       <div className="message-container">
         <div className="thank-you-container">
           <h1>Congratulations! You have reached the end of the survey.</h1>

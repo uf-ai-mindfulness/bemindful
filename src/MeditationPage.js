@@ -47,7 +47,8 @@ function MeditationPage(props) {
       {/* <div className="background-image-med"></div> */}
       
     <div className="meditation-page">
-    <img src="meditation.jpg" alt="Welcome" className="landing-background-image" />     
+    {/* <img src="meditation.jpg" alt="Welcome" className="landing-background-image" />      */}
+    <div className="meditation-background-image"></div>
       <h2 className="title">Recommended Meditation</h2>
       <div className="video-container">
         <div className="video-wrapper">
@@ -65,12 +66,12 @@ function MeditationPage(props) {
             // autoPlay
           />
         </div>
-        <div className="video-info">
+        {/* <div className="video-info">
           <p className="description">Description: {description}
           </p>
           <p className="benefits">Benefits: {benefits}
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="button-container">
         {/* <Link to="/video"> */}
