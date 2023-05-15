@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/bemindful/static/css/main.2a0071bc.css",
+    "main.js": "/bemindful/static/js/main.d686f65c.js",
+    "static/js/787.ef54eb24.chunk.js": "/bemindful/static/js/787.ef54eb24.chunk.js",
+    "static/media/meditation.jpg": "/bemindful/static/media/meditation.70ad4fe6377d91c3deb1.jpg",
+    "static/media/surveypage.JPG": "/bemindful/static/media/surveypage.d4297260faa0faeb73c8.JPG",
+    "static/media/mindfulness_welcome.jpg": "/bemindful/static/media/mindfulness_welcome.5d80f21e0baa6b9aa6ce.jpg",
+    "index.html": "/bemindful/index.html",
+    "main.2a0071bc.css.map": "/bemindful/static/css/main.2a0071bc.css.map",
+    "main.d686f65c.js.map": "/bemindful/static/js/main.d686f65c.js.map",
+    "787.ef54eb24.chunk.js.map": "/bemindful/static/js/787.ef54eb24.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a0071bc.css",
+    "static/js/main.d686f65c.js"
+  ]
+}
