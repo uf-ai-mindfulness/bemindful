@@ -37,7 +37,7 @@ function MeditationPage(props) {
     <div>
       <header className="header">
         <div className="logo-container">
-          <img src="mlogo.png" alt="Your Logo" />
+          <img src="mlogo.png" alt="BeMindful" />
         </div>
         <div className="nav-links">
           <a href="#" onClick={handleHomeClick}>Home</a>

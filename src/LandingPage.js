@@ -49,7 +49,7 @@ function LandingPage(props) {
     <div className="landing-page">
       <header className="header">
         <div className="logo-container">
-          <img src="mlogo.png" alt="Be Mindful" />
+          <img src="mlogo.png" alt="BeMindful" />
         </div>
         <div className="nav-links">
           <a href="#" onClick={handleHomeClick}>Home</a>

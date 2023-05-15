@@ -1,7 +1,7 @@
 {
   "name": "mindfulness",
   "version": "0.1.0",
-  "homepage": "https://Jay-VD-K.github.io/mindfulness",
+  "homepage": "https://uf-ai-mindfulness.github.io/bemindful",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
