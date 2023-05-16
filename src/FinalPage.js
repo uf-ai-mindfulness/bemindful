@@ -9,10 +9,6 @@ function FinalPage() {
   const location = useLocation();
   const {videoUrl} = location.state;
 
-  // const searchParams = new URLSearchParams(location.search);
-  // const nextPage = searchParams.get('nextPage');
-  // const videoUrl = searchParams.get('videoUrl');
-
   const handleRegenerateRecommendation = () => {
     const nextPage = '/meditation';
   

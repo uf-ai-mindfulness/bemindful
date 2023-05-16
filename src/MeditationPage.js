@@ -1,19 +1,10 @@
 import React from 'react';
-// import { Link } from 'react-router-dom'
-import VideoPage from './VideoPage';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './MeditationPage.css'
 
-// import './App.css';
-// const videos = [
-//   'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-//   'https://www.youtube.com/watch?v=jPpUNAFHgxM',
-//   'https://www.youtube.com/watch?v=HT_ZvCtYNSk'
-// ];
-
 function MeditationPage(props) {
   const location = useLocation();
-  const { videoUrl, description, benefits, onComplete } = location.state;
+  const { videoUrl, description, benefits } = location.state;
 
   const navigate = useNavigate();
 

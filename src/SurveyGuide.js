@@ -7,25 +7,13 @@ function AboutUs() {
   const navigate = useNavigate();
 
   const location = useLocation();
-  const { videoUrl, description, benefits, onComplete } = location.state;
+  const { videoUrl, description, benefits } = location.state;
 
   const handleMeditateClick = () => {
     // navigate('/video');
     const nextPage = '/final';
     navigate('/postquestions', { state: {nextPage : nextPage, videoUrl: videoUrl} });
     // alert('Survey completed!');
-  };
-
-  const handleRegenerateRecommendation = () => {
-    const nextPage = '/meditation';
-  
-    navigate('/questions', { state: nextPage  });
-  };
-
-  const handleRepeatMeditation = () => {
-    // Handle repeat meditation button click
-    // ...
-    navigate('/meditation');
   };
 
   const handleHomeClick = () => {

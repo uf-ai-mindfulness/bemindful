@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
 import './PostQuestionsPage.css'
 
 const Question = ({ questionText, answerOptions, onChange }) => {

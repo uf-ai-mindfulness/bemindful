@@ -468,7 +468,7 @@ const QuestionsPage = () => {
   const navigate = useNavigate();
 
   const location = useLocation();
-  const { nextPage, videoUrl } = location.state;
+  // const { nextPage, videoUrl } = location.state;
 
   const currentQuestions = questionSets[currentQuestionSetIndex];
 
