@@ -106,6 +106,7 @@ const QuestionsPage = () => {
           { label: "More than 9", value: "4" },
         ],
       },
+    ], [
       // { id: 'BV10', text: 'In which academic college is your major at UF?',
       // // ************************************************************************
       //   answerOptions: [
@@ -124,6 +125,7 @@ const QuestionsPage = () => {
           { label: "Graduate or Professional", value: "5" },
         ],
       },
+    ], [
       { id: 'BV12', text: 'Do you have a part-time job apart from your study?',
         answerOptions: [
           { label: "Yes", value: "1" },
@@ -140,6 +142,7 @@ const QuestionsPage = () => {
           { label: "Very Often", value: "4" },
         ],
       },
+    ], [
       { id: 'BV14', text: 'In the last month, how often have you found that you could not cope with all the things that you had to do?',
         answerOptions: [
           { label: "Never", value: "0" },
@@ -149,6 +152,7 @@ const QuestionsPage = () => {
           { label: "Very Often", value: "4" },
         ],
       },
+    ], [
       { id: 'BV15', text: 'What’s your perceived level of financial burden?',
         answerOptions: [
           { label: "None", value: "0" },
@@ -168,6 +172,7 @@ const QuestionsPage = () => {
           { label: "5 to 7 Nights", value: "5" },
         ],
       },
+    ], [
       { id: 'BV17', text: 'Thinking about a typical night in the last month, how would you rate your sleep quality?',
         answerOptions: [
           { label: "very good", value: "1" },
@@ -178,8 +183,6 @@ const QuestionsPage = () => {
         ],
       },
     ],
-    
-    
     
     // SMSPA
     [
@@ -192,6 +195,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA2', text: 'I noticed pleasant and unpleasant emotions.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -201,6 +205,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA3', text: 'I noticed pleasant and unpleasant thoughts.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -210,6 +215,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA4', text: 'I noticed emotions come and go.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -229,6 +235,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA6', text: 'It was interesting to see the patterns of my thinking.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -238,6 +245,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA7', text: 'I focused on the movement of my body.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -247,6 +255,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA8', text: 'I felt present in my body.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -266,6 +275,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA10', text: 'I was aware of how my body felt.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -275,6 +285,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA11', text: 'I noticed the sensations in my body.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -284,6 +295,7 @@ const QuestionsPage = () => {
           { label: "Very much", value: "4" },
         ],
       },
+    ], [
       { id: 'SMSPA12', text: 'I was in tune with how hard my muscles were working.',
         answerOptions: [
           { label: "Not at all", value: "0" },
@@ -304,6 +316,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ2', text: 'I’m good at finding words to describe my feelings.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -313,6 +326,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
         },
+      ], [
       { id: 'FFMQ3', text: 'I don’t pay attention to what I’m doing because I’m dreaming, worrying, or otherwise distracted.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -322,6 +336,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ4', text: 'I believe some of my thoughts are abnormal or bad and I shouldn’t think that way.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -331,6 +346,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ5', text: 'When I have distressing thoughts or images, I “step back” and am aware of the thought or image without getting taken over by it.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -351,6 +367,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ7', text: 'I have trouble thinking of the right words to express how I feel about things.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -360,6 +377,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ8', text: 'I do jobs or tasks automatically without being aware of what I’m doing.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -369,6 +387,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ9', text: 'I think some of my emotions are bad or inappropriate and I shouldn’t feel them.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -378,6 +397,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ10', text: 'When I have distressing thoughts or images I am able just to notice them without reacting.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -398,6 +418,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ12', text: 'Even when I’m feeling terribly upset I can find a way to put it into words.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -407,6 +428,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ13', text: 'I find myself doing things without paying attention.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -416,6 +438,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ14', text: 'I tell myself I shouldn’t be feeling the way I’m feeling.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
@@ -425,6 +448,7 @@ const QuestionsPage = () => {
           { label: "Very often or always true", value: "5" },
         ],
       },
+    ], [
       { id: 'FFMQ15', text: 'When I have distressing thoughts or images I just notice them and let them go.',
         answerOptions: [
           { label: "Never or very rarely true", value: "1" },
