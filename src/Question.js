@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './PostQuestionsPage.css'
 
-const Question = ({ questionText, answerOptions, onChange }) => {
+const Question = ({ key, questionText, answerOptions, onChange, questionSets }) => {
   const [selectedValue, setSelectedValue] = useState('');
 
   const handleOptionChange = (e) => {
@@ -51,141 +51,136 @@ const Question = ({ questionText, answerOptions, onChange }) => {
   return (
     <div className="questions-page">
 
-{/* <div className="mcq-container">
-      <div className="mcq-question">
-        <p>Level of Agreement</p>
+    <div className="mcq-container">
+      {/* <div className="mcq-question">
+        <p>Please think back to how you have felt during the past 24 hours. Using the 0-4 scale below to indicate how much you experienced each of the following statements.</p>
         <div className="mcq-agreement">
-          <span>1 - Strongly disagree</span>
-          <span>2 - Disagree</span>
-          <span>3 - Somewhat disagree</span>
-          <span>4 - Neither agree or disagree</span>
-          <span>5 - Somewhat agree</span>
-          <span>6 - Agree</span>
-          <span>7 - Strongly agree</span>
+          <p>1 - Strongly disagree</p>
+          <p>2 - Disagree</p>
+          <p>3 - Somewhat disagree</p>
+          <p>4 - Neither agree or disagree</p>
+          <p>5 - Somewhat agree</p>
+          <p>6 - Agree</p>
+          <p>7 - Strongly agree</p>
         </div>
-      </div>
-      {questions.map((q) => (
-        <div key={q.id} className="mcq-question">
-          <p>{q.text}</p>
+      </div> */}
+      {/* {questions.map((q) => ( */}
+        <div key={key} className="mcq-question">
+          <p>{questionText}</p>
           <div className="mcq-response">
-            <input
-              type="radio"
-              name={q.id}
-              value="1"
-              onChange={handleChange}
-            />
-            <input
-              type="radio"
-              name={q.id}
-              value="2"
-              onChange={handleChange}
-            />
-            <input
-              type="radio"
-              name={q.id}
-              value="3"
-              onChange={handleChange}
-            />
-            <input
-              type="radio"
-              name={q.id}
-              value="4"
-              onChange={handleChange}
-            />
-            <input
-              type="radio"
-              name={q.id}
-              value="5"
-              onChange={handleChange}
-            />
-            <input
-              type="radio"
-              name={q.id}
-              value="6"
-              onChange={handleChange}
-            />
-            <input
-              type="radio"
-              name={q.id}
-              value="7"
-              onChange={handleChange}
-            />
-            <label>
-        <input type="radio" value="1" checked={selectedValue === "1"} onChange={handleOptionChange} />
-        Strongly disagree
-      </label>
-      <label>
-        <input type="radio" value="2" checked={selectedValue === "2"} onChange={handleOptionChange} />
-        Disagree
-      </label>
-      <label>
-        <input type="radio" value="3" checked={selectedValue === "3"} onChange={handleOptionChange} />
-        Somewhat disagree
-      </label>
-      <label>
-        <input type="radio" value="4" checked={selectedValue === "4"} onChange={handleOptionChange} />
-        Neither agree or disagree
-      </label>
-      <label>
-        <input type="radio" value="5" checked={selectedValue === "5"} onChange={handleOptionChange} />
-        Somewhat agree
-      </label>
-      <label>
-        <input type="radio" value="6" checked={selectedValue === "6"} onChange={handleOptionChange} />
-        Agree
-      </label>
-      <label>
-        <input type="radio" value="7" checked={selectedValue === "7"} onChange={handleOptionChange} />
-        Strongly agree
-      </label>
-          </div>
-        </div>
-      ))}
-    </div> */}
-      
-      <div className="question-container">
-        
-        <h2 className="question-title">
-          {questionText}</h2>
-          <div className="answer-options">
-      {/* <label>
-        <input type="radio" value="1" checked={selectedValue === "1"} onChange={handleOptionChange} />
-        Strongly disagree
-      </label>
-      <label>
-        <input type="radio" value="2" checked={selectedValue === "2"} onChange={handleOptionChange} />
-        Disagree
-      </label>
-      <label>
-        <input type="radio" value="3" checked={selectedValue === "3"} onChange={handleOptionChange} />
-        Somewhat disagree
-      </label>
-      <label>
-        <input type="radio" value="4" checked={selectedValue === "4"} onChange={handleOptionChange} />
-        Neither agree or disagree
-      </label>
-      <label>
-        <input type="radio" value="5" checked={selectedValue === "5"} onChange={handleOptionChange} />
-        Somewhat agree
-      </label>
-      <label>
-        <input type="radio" value="6" checked={selectedValue === "6"} onChange={handleOptionChange} />
-        Agree
-      </label>
-      <label>
-        <input type="radio" value="7" checked={selectedValue === "7"} onChange={handleOptionChange} />
-        Strongly agree
-      </label> */}
-      {answerOptions.map((option, index) => (
+          {answerOptions.map((option, index) => (
               <label key={index}>
                 <input type="radio" value={option.value} checked={selectedValue === option.value} onChange={handleOptionChange} />
                 {option.label}
               </label>
             ))}
-    </div>
-    </div>
+          </div>
+          {/* <div className="mcq-response">
+            <label>
+              <input type="radio" value="1" checked={selectedValue === "1"} onChange={handleOptionChange} />
+              Strongly disagree
+            </label>
+            <label>
+              <input type="radio" value="2" checked={selectedValue === "2"} onChange={handleOptionChange} />
+              Disagree
+            </label>
+            <label>
+              <input type="radio" value="3" checked={selectedValue === "3"} onChange={handleOptionChange} />
+              Somewhat disagree
+            </label>
+            <label>
+              <input type="radio" value="4" checked={selectedValue === "4"} onChange={handleOptionChange} />
+              Neither agree or disagree
+            </label>
+            <label>
+              <input type="radio" value="5" checked={selectedValue === "5"} onChange={handleOptionChange} />
+              Somewhat agree
+            </label>
+            <label>
+              <input type="radio" value="6" checked={selectedValue === "6"} onChange={handleOptionChange} />
+              Agree
+            </label>
+            <label>
+              <input type="radio" value="7" checked={selectedValue === "7"} onChange={handleOptionChange} />
+              Strongly agree
+            </label>
+          </div> */}
+        </div>
+        {/* ))} */}
+      </div>
+      
+      <div className="question-container">
+        
+        {/* <h2 className="question-title">
+          {questionText}</h2> */}
+          {/* <div className="answer-options"> */}
+            {/* <label>
+              <input type="radio" value="1" checked={selectedValue === "1"} onChange={handleOptionChange} />
+              Strongly disagree
+            </label>
+            <label>
+              <input type="radio" value="2" checked={selectedValue === "2"} onChange={handleOptionChange} />
+              Disagree
+            </label>
+            <label>
+              <input type="radio" value="3" checked={selectedValue === "3"} onChange={handleOptionChange} />
+              Somewhat disagree
+            </label>
+            <label>
+              <input type="radio" value="4" checked={selectedValue === "4"} onChange={handleOptionChange} />
+              Neither agree or disagree
+            </label>
+            <label>
+              <input type="radio" value="5" checked={selectedValue === "5"} onChange={handleOptionChange} />
+              Somewhat agree
+            </label>
+            <label>
+              <input type="radio" value="6" checked={selectedValue === "6"} onChange={handleOptionChange} />
+              Agree
+            </label>
+            <label>
+              <input type="radio" value="7" checked={selectedValue === "7"} onChange={handleOptionChange} />
+              Strongly agree
+            </label> */}
+            {/* {answerOptions.map((option, index) => (
+              <label key={index}>
+                <input type="radio" value={option.value} checked={selectedValue === option.value} onChange={handleOptionChange} />
+                {option.label}
+              </label>
+            ))} */}
+          {/* </div> */}
+      </div>
     
     </div>
+    // <div className="questions-page">
+    //   <div className="mcq-container">
+    //     {questionSets.map((questionSet) => (
+    //       <div key={questionSet.QsetID} className="mcq-question">
+    //         <p>{questionSet.introText}</p>
+    //         <div className="mcq-agreement">
+    //           {questionSet.agreementOptions.map((option) => (
+    //             <p key={option}>{option}</p>
+    //           ))}
+    //         </div>
+    //         <p>{questionSet.text}</p>
+    //         <div className="mcq-response">
+    //           {questionSet.answerOptions.map((option) => (
+    //             <label key={option.value}>
+    //               <input
+    //                 type="radio"
+    //                 value={option.value}
+    //                 checked={selectedValues[questionSet.id] === option.value}
+    //                 onChange={() => handleOptionChange(questionSet.id, option.value)}
+    //               />
+    //               {option.label}
+    //             </label>
+    //           ))}
+    //         </div>
+    //       </div>
+    //     ))}
+    //   </div>
+    //   <div className="question-container"></div>
+    // </div>
   );
 };
 
