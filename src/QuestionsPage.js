@@ -668,7 +668,7 @@ const QuestionsPage = () => {
     if (currentQuestionSetIndex > 0) {
       // setCurrentQuestionSetIndex(currentQuestionSetIndex - 1);
       setCurrentQuestionSetIndex((prevIndex) => prevIndex - 1);
-      setResponses({});
+      // setResponses({});
     } else {
       navigate(-1);
     }
