@@ -258,7 +258,7 @@ const QuestionsPage = () => {
       questions: [
         { id: 'BV17', text: 'Thinking about a typical night in the last month, how would you rate your sleep quality?',
           answerOptions: [
-            { label: "very good", value: "1" },
+            { label: "Very good", value: "1" },
             { label: "Good", value: "2" },
             { label: "Average", value: "3" },
             { label: "Poor", value: "4" },
