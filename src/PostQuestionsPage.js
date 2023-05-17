@@ -790,7 +790,7 @@ const PostQuestionsPage = () => {
   const navigate = useNavigate();
 
   const location = useLocation();
-  const { nextPage, videoUrl } = location.state;
+  const { nextPage, videoUrl, preSurveyResponses } = location.state;
 
   // const currentQuestions = questionSets[currentQuestionSetIndex];
   const currentQuestionSet = questionSets[currentQuestionSetIndex];
@@ -824,13 +824,20 @@ const PostQuestionsPage = () => {
     // console.log("allResponses-----", allResponses);
     // navigate(nextPage, { state: {videoUrl: videoUrl} });
     e.preventDefault();
-    const allResponses = {...responses};
+    // const allResponses = {...responses};
+
+    const allResponses = {
+      ...responses,
+      ...preSurveyResponses,
+      videoUrl: videoUrl
+    };
+
     console.log("allResponses-----", allResponses);
     
     // navigate(nextPage, { state: { videoUrl: videoUrl, description: "nature sound", benefits:"relax" } });
 
     try {
-      const response = await fetch('http://minfulness-api.ue.r.appspot.com/savePostSurveyResponse', {
+      const response = await fetch('https://minfulness-api.ue.r.appspot.com/savePostSurveyResponse', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

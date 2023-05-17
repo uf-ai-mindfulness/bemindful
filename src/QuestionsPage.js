@@ -610,7 +610,7 @@ const QuestionsPage = () => {
     // navigate('/meditation', { state: { videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4', description: "nature sound", benefits:"relax" } });
 
     try {
-      const response = await fetch('http://minfulness-api.ue.r.appspot.com/recommendVideo', {
+      const response = await fetch('https://minfulness-api.ue.r.appspot.com/recommendVideo', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -629,7 +629,7 @@ const QuestionsPage = () => {
       navigate('/meditation', {
         state: {
           videoUrl,
-          description: "nature sound", benefits:"relax"
+          description: "nature sound", benefits:"relax", preSurveyResponses: allResponses,
         }
       });
     } catch (error) {

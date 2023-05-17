@@ -7,12 +7,12 @@ function AboutUs() {
   const navigate = useNavigate();
 
   const location = useLocation();
-  const { videoUrl, description, benefits } = location.state;
+  const { videoUrl, description, benefits, preSurveyResponses } = location.state;
 
   const handleMeditateClick = () => {
     // navigate('/video');
     const nextPage = '/final';
-    navigate('/postquestions', { state: {nextPage : nextPage, videoUrl: videoUrl} });
+    navigate('/postquestions', { state: {nextPage : nextPage, videoUrl: videoUrl, preSurveyResponses: preSurveyResponses } });
     // alert('Survey completed!');
   };
 

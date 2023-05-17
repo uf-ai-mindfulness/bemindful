@@ -5,7 +5,7 @@ import './VideoPage.css';
 
 function VideoPage() {
   const location = useLocation();
-  const { videoUrl } = location.state;
+  const { videoUrl, preSurveyResponses } = location.state;
 //   const videoRef = useRef(null);
   const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ function VideoPage() {
   
     const nextPage = '/final';
   
-    navigate('/survey', { state: {nextPage : nextPage, videoUrl: videoUrl} });
+    navigate('/survey', { state: {nextPage : nextPage, videoUrl: videoUrl, preSurveyResponses: preSurveyResponses } });
     // navigate('/postquestions', { state: { nextPage: nextPage, videoUrl: videoUrl } });
   };
   

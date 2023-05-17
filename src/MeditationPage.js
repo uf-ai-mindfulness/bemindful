@@ -4,13 +4,13 @@ import './MeditationPage.css'
 
 function MeditationPage(props) {
   const location = useLocation();
-  const { videoUrl, description, benefits } = location.state;
+  const { videoUrl, description, benefits, preSurveyResponses } = location.state;
 
   const navigate = useNavigate();
 
   const handleMeditateClick = () => {
     // navigate('/video');
-    navigate('/video', { state: { videoUrl: videoUrl } });
+    navigate('/video', { state: { videoUrl: videoUrl, preSurveyResponses: preSurveyResponses } });
     // alert('Survey completed!');
   };
 
