@@ -850,13 +850,15 @@ const PostQuestionsPage = () => {
         // navigate('/meditation', { state: { videoUrl: 'https://www.dropbox.com/s/mvu95wbgrjsln94/1.mp4?raw=1', description: "nature sound", benefits:"relax" } });
       }
   
-      // const data = await response.json();
-      // const { videoUrl } = data;
+      const data = await response.json();
+      const { unique_id } = data;
+
+      console.log("unique-id-----", unique_id);
   
       navigate(nextPage, {
         state: {
           videoUrl: videoUrl,
-          description: "nature sound", benefits:"relax"
+          description: "nature sound", benefits:"relax", unique_id: unique_id
         }
       });
     } catch (error) {
